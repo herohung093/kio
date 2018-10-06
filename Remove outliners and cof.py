@@ -23,7 +23,7 @@ from numpy import empty
 
 
 
-with open('2018_CI_Assignment_Training_Data.csv') as csvfile:
+with open('Training_Data.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     data = [r for r in readCSV]
     data.pop(0)
@@ -65,7 +65,7 @@ print(outliners)
 #writer.writerow(p_new)
 #newcsvfile.close()
 
-with open('2018_CI_Assignment_Testing_Data.csv') as csvfile:
+with open('Testing_Data.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
     dataTesting = [r for r in readCSV]
     dataTesting.pop(0)
